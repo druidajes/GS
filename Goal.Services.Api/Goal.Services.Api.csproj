@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMediator" Version="0.4.7" />
+    <PackageReference Include="FluentMediator.Microsoft.Extensions.DependencyInjection" Version="0.4.7" />
+    <PackageReference Include="FluentValidation" Version="11.0.2" />
+    <PackageReference Include="Jaeger.Core" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Goal.Application\Goal.Application.csproj" />
+    <ProjectReference Include="..\Goal.Infra.IoC\Goal.Infra.IoC.csproj" />
+    <ProjectReference Include="..\Goal.Infra\Goal.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
